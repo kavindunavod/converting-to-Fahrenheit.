@@ -1,15 +1,10 @@
-object project4 {
+object tempConverter{
 
-  def main(args: Array[String]) : Unit = {
+    def celsiousToFahranheit(celsious: Double): Double={
+        celsious * 1.8 + 32
+    }
 
-  calculate();
-
-  }
-  def calculate(): Unit = {
-    val temp = 35;
-    val farah = temp * 1.800 + 32.00;
-    println("fahrenheit of 35c is " + farah + "f");
-
-  }
-
+    def main(args:Array[String]): Unit={
+        println(s"35°C is equal to ${celsiousToFahranheit(35)}°F")
+    }
 }
